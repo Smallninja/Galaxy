@@ -119,7 +119,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div (keyup)=\"toggleInt($event)\" class=\"wrap\" tabindex=\"0\">\r\n    <div class=\"background-img\">\r\n        <video *ngIf=\"showVideo\" id=\"video\" autoplay loop >\r\n            <source src=\"/assets/video/animation.mp4\" type=\"video/mp4\">\r\n        </video>\r\n    </div>\r\n    <div *ngIf=\"show\" @fade class=\"container\">\r\n        <app-navbar></app-navbar>\r\n        <router-outlet></router-outlet>\r\n        <app-footer></app-footer>\r\n    </div>\r\n</div>"
+module.exports = "<div (keyup)=\"toggleInt($event)\" class=\"wrap\" tabindex=\"0\">\r\n    <div class=\"background-img\">\r\n        <video *ngIf=\"showVideo\" id=\"video\" autoplay loop >\r\n            <source src=\"galaxy/assets/video/animation.mp4\" type=\"video/mp4\">\r\n        </video>\r\n    </div>\r\n    <div *ngIf=\"show\" @fade class=\"container\">\r\n        <app-navbar></app-navbar>\r\n        <router-outlet></router-outlet>\r\n        <app-footer></app-footer>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
