@@ -106,7 +106,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "body, html{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n.background-img{\r\n\tbackground:url(" + __webpack_require__("../../../../../src/assets/img/galaxy.jpg") + ") no-repeat center center;\r\n\tbackground-size:cover;\r\n\theight:100%;\r\n\twidth:100%;\r\n\tposition: fixed;\r\n\tz-index: -10;\r\n}\r\n.container{\r\n\tmin-height: 100%;\r\n\theight:auto;\r\n}\r\n#video{\r\n\twidth:100%;\r\n\theight:100%;\r\n\t-o-object-fit: fill;\r\n\t   object-fit: fill;\r\n}\r\n.wrap{\r\n\tmin-height:100%;\r\n\theight:auto;\r\n\tposition:relative;\r\n\tz-index: 10;\r\n}", ""]);
+exports.push([module.i, "body, html{\r\n\tmargin: 0;\r\n\tpadding: 0;\r\n}\r\n.background-img{\r\n\tbackground:url(\"https://smallninja.github.io/galaxy/assets/img/galaxy.jpg\") no-repeat center center;\r\n\tbackground-size:cover;\r\n\theight:100%;\r\n\twidth:100%;\r\n\tposition: fixed;\r\n\tz-index: -10;\r\n}\r\n.container{\r\n\tmin-height: 100%;\r\n\theight:auto;\r\n}\r\n#video{\r\n\twidth:100%;\r\n\theight:100%;\r\n\t-o-object-fit: fill;\r\n\t   object-fit: fill;\r\n}\r\n.wrap{\r\n\tmin-height:100%;\r\n\theight:auto;\r\n\tposition:relative;\r\n\tz-index: 10;\r\n}", ""]);
 
 // exports
 
@@ -119,7 +119,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div (keyup)=\"toggleInt($event)\" class=\"wrap\" tabindex=\"0\">\r\n    <div class=\"background-img\">\r\n        <video *ngIf=\"showVideo\" id=\"video\" autoplay loop >\r\n            <source src=\"../assets/video/animation.mp4\" type=\"video/mp4\">\r\n        </video>\r\n    </div>\r\n    <div *ngIf=\"show\" @fade class=\"container\">\r\n        <app-navbar></app-navbar>\r\n        <router-outlet></router-outlet>\r\n        <app-footer></app-footer>\r\n    </div>\r\n</div>"
+module.exports = "<div (keyup)=\"toggleInt($event)\" class=\"wrap\" tabindex=\"0\">\r\n    <div class=\"background-img\">\r\n        <video *ngIf=\"showVideo\" id=\"video\" autoplay loop >\r\n            <source src=\"/assets/video/animation.mp4\" type=\"video/mp4\">\r\n        </video>\r\n    </div>\r\n    <div *ngIf=\"show\" @fade class=\"container\">\r\n        <app-navbar></app-navbar>\r\n        <router-outlet></router-outlet>\r\n        <app-footer></app-footer>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -429,13 +429,6 @@ var NavbarComponent = (function () {
 }());
 
 
-
-/***/ }),
-
-/***/ "../../../../../src/assets/img/galaxy.jpg":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "galaxy.65a8c38ebcb7380b0899.jpg";
 
 /***/ }),
 
