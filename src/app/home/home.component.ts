@@ -10,11 +10,6 @@ import { fade } from "../animations";
 })
 export class HomeComponent implements OnInit {
 
-  list: string[] = ["Joseph", "Adam", "Alicia", "Alyssa"];
-
-  delete(item){
-    this.list.splice(item, 1);
-  }
   constructor() { }
 
   ngOnInit() {

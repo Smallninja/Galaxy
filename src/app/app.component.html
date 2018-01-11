@@ -1,4 +1,12 @@
-<div class="background-img"></div> 
-<app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div (keyup)="toggleInt($event)" class="wrap" tabindex="0">
+    <div class="background-img">
+        <video *ngIf="showVideo" id="video" autoplay loop >
+            <source src="../assets/video/animation.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div *ngIf="show" @fade class="container">
+        <app-navbar></app-navbar>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </div>
+</div>
